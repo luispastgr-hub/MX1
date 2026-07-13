@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diseño y Desarrollo Web | Páginas y Tiendas en Línea | Webica</title>
+<meta name="description" content="Estudio de diseño y desarrollo web. Creamos páginas web y tiendas en línea que atraen clientes en México, Estados Unidos, Canadá y España. Trabajamos a distancia. Escríbenos por WhatsApp.">
+<link rel="canonical" href="https://webica.mx/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='9' fill='%23027FFF'/%3E%3Ctext x='17' y='23' font-family='monospace' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Webica">
+<meta property="og:title" content="Diseño y Desarrollo Web | Páginas y Tiendas en Línea | Webica">
+<meta property="og:description" content="Estudio de diseño y desarrollo web. Creamos páginas web y tiendas en línea que atraen clientes en México, Estados Unidos, Canadá y España. Trabajamos a distancia.">
+<meta property="og:url" content="https://webica.mx/">
+<!-- TODO: reemplazar por una imagen real de 1200x630px antes de publicar -->
+<meta property="og:image" content="https://webica.mx/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!--
+  SCHEMA JSON-LD — pendientes antes de publicar:
+  - "telephone": agregar número real de Webica en formato +52...
+  - "logo" / "image": subir logo real y capturas reales, reemplazar rutas
+  - "sameAs": agregar URLs reales de redes sociales
+  - "aggregateRating.reviewCount": actualizar al total real de reseñas de Google
+    (hoy sólo se muestran 6 como placeholder en el diseño)
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://webica.mx/#organization",
+      "name": "Webica",
+      "url": "https://webica.mx/",
+      "logo": "https://webica.mx/assets/img/logo.png",
+      "areaServed": ["MX", "US", "CA", "ES"],
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://webica.mx/#website",
+      "url": "https://webica.mx/",
+      "name": "Webica",
+      "publisher": { "@id": "https://webica.mx/#organization" },
+      "inLanguage": "es-MX"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://webica.mx/#localbusiness",
+      "name": "Webica",
+      "image": "https://webica.mx/assets/img/og-image.jpg",
+      "url": "https://webica.mx/",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Veracruz",
+        "addressCountry": "MX"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "6",
+        "bestRating": "5"
+      },
+      "review": [
+        { "@type": "Review", "author": { "@type": "Person", "name": "Eder Castro" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } },
+        { "@type": "Review", "author": { "@type": "Person", "name": "Manuel Pérez" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } },
+        { "@type": "Review", "author": { "@type": "Person", "name": "Ligia Donoso" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } },
+        { "@type": "Review", "author": { "@type": "Person", "name": "Violeta Tejada" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } },
+        { "@type": "Review", "author": { "@type": "Person", "name": "Guillermo Ampudia" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } },
+        { "@type": "Review", "author": { "@type": "Person", "name": "Susan Sandoval" }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header" data-header>
+  <div class="container">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+      Webica
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#a-distancia">Trabajamos a distancia</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#planes">Planes</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a class="btn btn--outline" href="/contacto">Agenda una llamada</a>
+      <!-- TODO: reemplazar 52XXXXXXXXXX por el número real de WhatsApp de Webica -->
+      <a class="btn btn--primary" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener">
+        Escríbenos por WhatsApp
+      </a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Navegación móvil">
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#a-distancia">Trabajamos a distancia</a></li>
+    <li><a href="#proceso">Cómo trabajamos</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="/contacto">Contacto</a></li>
+  </ul>
+  <div class="btn-row">
+    <a class="btn btn--outline btn--block" href="/contacto">Agenda una llamada de 20 min</a>
+    <a class="btn btn--primary btn--block" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow">Estudio de diseño y desarrollo web</p>
+        <h1>Diseño web que trabaja para tu negocio, estés donde estés</h1>
+        <p class="lede">Diseñamos y desarrollamos páginas web y tiendas en línea pensadas para atraer clientes, no solo para verse bien. Con base en Veracruz y trabajando a distancia con negocios de todo México, Estados Unidos, Canadá y España.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.33 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm0 18.2h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.23 8.23 0 1 1 6.98 3.86Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <a class="btn btn--outline" href="/contacto">Agenda una llamada de 20 min</a>
+        </div>
+        <p class="microcopy">
+          <span>Respuesta el mismo día</span>
+          <span class="dot">·</span>
+          <span>Propuesta clara antes de cualquier pago</span>
+        </p>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="hero-visual__stage">
+          <div class="device-frame">
+            <div class="device-frame__bar">
+              <div class="device-frame__dots"><span></span><span></span><span></span></div>
+              <div class="device-frame__url">webica.mx</div>
+            </div>
+            <div class="device-frame__body">
+              <!-- TODO: reemplazar por captura real de un proyecto de Webica (ej. AltiSuma, Pearl Club) -->
+              <div class="device-frame__placeholder">
+                <strong>Captura de un proyecto real</strong>
+                Aquí va el mockup de un sitio de Webica en laptop, listo para reemplazar.
+              </div>
+            </div>
+          </div>
+          <div class="device-frame device-frame--phone">
+            <div class="device-frame__bar">
+              <div class="device-frame__dots"><span></span><span></span><span></span></div>
+            </div>
+            <div class="device-frame__body">
+              <div class="device-frame__placeholder">
+                <strong>Versión móvil</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= TRUST BAR ========================= -->
+  <section class="trust-bar" data-reveal>
+    <div class="container">
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        +[N] proyectos entregados
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+        Clientes en México, Chile, Estados Unidos y España
+      </span>
+      <span class="trust-item">
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </span>
+        5.0 en reseñas de Google
+      </span>
+    </div>
+  </section>
+
+  <!-- ========================= SERVICIOS ========================= -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Servicios</p>
+        <h2>Soluciones completas para tu presencia en línea</h2>
+        <p class="text-body" style="margin-inline:auto;">Ofrecemos servicios personalizados para cubrir todas tus necesidades digitales: desde el diseño y la creación de sitios web, hasta la infraestructura que los sostiene, el mantenimiento continuo y el contenido para posicionarlos. Nos aseguramos de que tu sitio esté siempre actualizado, optimizado y listo para generar resultados.</p>
+      </div>
+
+      <div class="services-grid" data-reveal-group>
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Diseño de páginas web</h3>
+          <p>Diseñamos sitios web atractivos, funcionales y adaptados a dispositivos móviles, que capturan la esencia de tu marca y convierten visitantes en resultados. Desde el sitio completo de tu negocio hasta una landing page enfocada en un lanzamiento o una promoción.</p>
+          <a class="service-card__link" href="/diseno-web">Ver diseño web
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3h2l2.6 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/></svg>
+          </div>
+          <h3>Tiendas en línea</h3>
+          <p>Diseñamos y desarrollamos tiendas en línea completas, desde la configuración del catálogo de productos hasta la integración de pasarelas de pago y sistemas de gestión de inventario.</p>
+          <a class="service-card__link" href="/tiendas-en-linea">Ver tiendas en línea
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3M13.5 6l-3 12"/></svg>
+          </div>
+          <h3>Desarrollo web y aplicaciones a medida</h3>
+          <p>Desarrollamos aplicaciones web a la medida de tu negocio: sistemas de reservas, paneles internos, portales de clientes y plataformas de gestión. Funcionalidad avanzada y rendimiento excepcional, para lo que ningún plugin resuelve por sí solo. También montamos academias en línea para que vendas tus cursos.</p>
+          <a class="service-card__link" href="/desarrollo-web">Ver desarrollo y web apps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/><path d="M7 6h.01M7 12h.01M7 18h.01"/></svg>
+          </div>
+          <h3>Hosting, dominios e infraestructura</h3>
+          <p>Te damos todo lo que tu sitio necesita para funcionar: hosting rápido, VPS, registro de dominio, cuentas de correo y certificado de seguridad SSL. Todo en un solo lugar, sin que tengas que contratar por separado.</p>
+          <a class="service-card__link" href="/hosting-infraestructura">Ver infraestructura
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Seguridad y mantenimiento</h3>
+          <p>Mantenemos tu sitio web siempre actualizado y seguro. Corregimos errores, optimizamos el rendimiento y garantizamos una experiencia de usuario óptima.</p>
+          <a class="service-card__link" href="/mantenimiento-web">Ver mantenimiento
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </div>
+          <h3>Optimización para buscadores (SEO)</h3>
+          <p>Trabajamos para que tu sitio web sea visible en Google y atraiga tráfico de personas que buscan justo lo que ofreces. Parte técnica, contenido y señales locales, todo cuidado.</p>
+          <a class="service-card__link" href="/posicionamiento-seo">Ver SEO
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-4 4Z"/><path d="M8 9h7M8 12.5h4"/></svg>
+          </div>
+          <h3>Creación de contenido</h3>
+          <p>Generamos contenido de alta calidad y relevante para tu audiencia, optimizado para buscadores y diseñado para que tu sitio siga creciendo con el tiempo.</p>
+          <a class="service-card__link" href="/creacion-de-contenido">Ver contenido
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4A8.5 8.5 0 0 1 4 15.3L2 21l5.9-1.9a8.4 8.4 0 0 0 3.8.9 8.4 8.4 0 0 0 8.4-8.4A8.4 8.4 0 0 0 12 3.1"/><path d="M9 10.5c0 3 2.5 5.5 5.5 5.5"/></svg>
+          </div>
+          <h3>Chatbots y asistentes con IA</h3>
+          <p>Creamos chatbots y asistentes virtuales para tu sitio web y tu WhatsApp: responden dudas, agendan citas y atienden a tus clientes las 24 horas, entrenados con la información de tu negocio. También integramos funciones de inteligencia artificial dentro de tu plataforma.</p>
+          <!-- Nota: /soluciones-ia no aparece en la lista de 11-12 páginas internas del brief; falta confirmar el slug definitivo -->
+          <a class="service-card__link" href="/soluciones-ia">Ver soluciones con IA
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M4.5 4.5l4 4M19.5 4.5l-4 4M4.5 19.5l4-4M19.5 19.5l-4-4"/></svg>
+          </div>
+          <h3>Rescate de sitios web</h3>
+          <p>¿Perdiste a quien hizo tu web y no sabes qué hacer? Recuperamos accesos, dominio y hosting, sin importar la plataforma (Wix, WordPress, Shopify, Tiendanube, HTML…), y nos hacemos cargo de aquí en adelante.</p>
+          <a class="service-card__link" href="/rescate-web">Ver rescate web
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRABAJAMOS A DISTANCIA ===================== -->
+  <section class="section section--brand" id="a-distancia">
+    <div class="container">
+      <div class="remote-grid">
+        <div>
+          <p class="eyebrow eyebrow--on-brand" data-reveal>Sin importar dónde estés</p>
+          <h2 data-reveal>¿En otra ciudad o país? Trabajamos contigo a distancia, sin complicaciones</h2>
+          <p class="lede" style="color:rgba(255,255,255,.82)" data-reveal>No importa si estás en Xalapa, Ciudad de México, Monterrey, Santiago, Madrid, Toronto o Houston: nuestro proceso funciona 100&nbsp;% en remoto, en tu horario y en español.</p>
+
+          <ul class="remote-list" data-reveal-group>
+            <li data-reveal>
+              <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="14" height="12" rx="2"/><path d="M16.5 10l5-3v10l-5-3"/></svg></span>
+              <p>Reuniones por videollamada cuando a ti te convenga</p>
+            </li>
+            <li data-reveal>
+              <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H8l-4 4Z"/><path d="M8 9h7M8 12.5h4"/></svg></span>
+              <p>Todo por escrito: propuesta, avances y entregas, sin sorpresas</p>
+            </li>
+            <li data-reveal>
+              <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg></span>
+              <p>Pagos flexibles: transferencia en México, tarjeta internacional, PayPal o Stripe</p>
+            </li>
+            <li data-reveal>
+              <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4A8.5 8.5 0 0 1 4 15.3L2 21l5.9-1.9a8.4 8.4 0 0 0 3.8.9 8.4 8.4 0 0 0 8.4-8.4A8.4 8.4 0 0 0 12 3.1"/></svg></span>
+              <p>Comunicación directa por WhatsApp: hablas con quien construye tu sitio</p>
+            </li>
+            <li data-reveal>
+              <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.9 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.9-3.8-9S9.5 5.6 12 3Z"/></svg></span>
+              <p>Ya lo hacemos: clientes en México, Chile, Estados Unidos, Canadá y España</p>
+            </li>
+          </ul>
+
+          <p class="remote-close" data-reveal>Si tienes un negocio y necesitas una página web o tienda en línea que funcione, te podemos ayudar, no importa dónde estés.</p>
+
+          <div class="btn-row" style="margin-top:2rem" data-reveal>
+            <a class="btn btn--on-white" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20contarles%20sobre%20mi%20proyecto" target="_blank" rel="noopener">Cuéntanos tu proyecto por WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="remote-map" aria-hidden="true" data-reveal>
+          <svg viewBox="0 0 300 240" width="100%" height="100%" fill="none">
+            <g stroke="rgba(255,255,255,.35)" stroke-width="1">
+              <path d="M20 60 Q80 20 150 45 T280 70" />
+              <path d="M10 120 Q100 90 150 120 T290 130" />
+              <path d="M30 190 Q120 160 170 185 T270 190" />
+            </g>
+            <g fill="#ffffff">
+              <circle cx="70" cy="70" r="5"/>
+              <circle cx="120" cy="130" r="5"/>
+              <circle cx="215" cy="55" r="5"/>
+              <circle cx="245" cy="150" r="5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CÓMO TRABAJAMOS ========================= -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Proceso</p>
+        <h2>Un proceso claro, sin tecnicismos y sin sorpresas</h2>
+      </div>
+
+      <ol class="timeline" data-reveal-group>
+        <li class="timeline-step" data-reveal>
+          <span class="timeline-step__num" aria-hidden="true">01</span>
+          <h3>Evaluación</h3>
+          <p>Llamada de 20 minutos para entender tu negocio y tus objetivos.</p>
+        </li>
+        <li class="timeline-step" data-reveal>
+          <span class="timeline-step__num" aria-hidden="true">02</span>
+          <h3>Propuesta transparente</h3>
+          <p>Sabes desde el inicio cuánto inviertes, cuándo estará listo y qué obtienes.</p>
+        </li>
+        <li class="timeline-step" data-reveal>
+          <span class="timeline-step__num" aria-hidden="true">03</span>
+          <h3>Planeación</h3>
+          <p>Analizamos tu industria y competidores para diseñar una estrategia única.</p>
+        </li>
+        <li class="timeline-step" data-reveal>
+          <span class="timeline-step__num" aria-hidden="true">04</span>
+          <h3>Diseño y desarrollo</h3>
+          <p>Convertimos tus ideas en un sitio real, hecho a tu medida.</p>
+        </li>
+        <li class="timeline-step" data-reveal>
+          <span class="timeline-step__num" aria-hidden="true">05</span>
+          <h3>Lanzamiento y acompañamiento</h3>
+          <p>Publicamos, te capacitamos y seguimos contigo.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== TECNOLOGÍA + TOQUE HUMANO ===================== -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Cómo trabajamos mejor</p>
+        <h2>Tecnología de punta, con gente real detrás de cada proyecto</h2>
+        <p class="text-body" style="margin-inline:auto;">Usamos inteligencia artificial, análisis de datos e investigación para trabajar más rápido y tomar mejores decisiones: desde encontrar las palabras clave correctas hasta optimizar tu sitio con datos reales. Pero nada se publica en automático: cada proyecto lo dirige, revisa y aprueba una persona. La tecnología nos hace más eficientes; el criterio y el trato siguen siendo humanos.</p>
+      </div>
+
+      <div class="tech-grid" data-reveal-group>
+        <div class="tech-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>Investigación con datos</h3>
+          <p>Analizamos tu mercado y tu competencia con herramientas profesionales, no con corazonadas.</p>
+        </div>
+        <div class="tech-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+          <h3>IA que acelera</h3>
+          <p>La usamos para avanzar más rápido en contenido y optimización, siempre con revisión humana.</p>
+        </div>
+        <div class="tech-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l2.5 2.5L16 9"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Criterio humano</h3>
+          <p>Hablas con personas que entienden tu negocio y responden por el resultado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PARA QUIÉN ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Para quién</p>
+        <h2>Trabajamos con negocios que ya operan y quieren verse a la altura en línea</h2>
+        <p class="text-body" style="margin-inline:auto;">Clínicas y consultorios, despachos y profesionales, comercios y tiendas, talleres e industria, restaurantes y emprendedores que exportan servicios. Si tu negocio es real, tu sitio debe estar a esa altura.</p>
+      </div>
+
+      <div class="industry-grid" data-reveal-group>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/><path d="M12 9v5M9.5 11.5h5"/></svg>
+          <span>Clínicas y consultorios</span>
+        </div>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          <span>Despachos y profesionales</span>
+        </div>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9M4 9h16M9 20v-6h6v6"/></svg>
+          <span>Comercios y tiendas</span>
+        </div>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L3 18l3 3 6.1-6.1a4 4 0 0 0 5.6-5.6l-2.5 2.5-2-2 2.5-2.5Z"/></svg>
+          <span>Talleres e industria</span>
+        </div>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6M10 3v6M6 6h4M8 9v12M16 3s-2 2-2 5 2 3 2 3v10"/></svg>
+          <span>Restaurantes</span>
+        </div>
+        <div class="industry-card" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.9 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.9-3.8-9S9.5 5.6 12 3Z"/></svg>
+          <span>Emprendedores que exportan servicios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= RESEÑAS ========================= -->
+  <section class="section section--tint" id="resenas">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Reseñas</p>
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <!-- TODO: sustituir el texto de cada reseña por el real proporcionado por el cliente -->
+      <div class="reviews-track" data-reveal-group>
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Eder Castro.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">EC</span>
+            <div>
+              <p class="review-card__name">Eder Castro</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Manuel Pérez.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">MP</span>
+            <div>
+              <p class="review-card__name">Manuel Pérez</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Ligia Donoso.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">LD</span>
+            <div>
+              <p class="review-card__name">Ligia Donoso</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Violeta Tejada.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">VT</span>
+            <div>
+              <p class="review-card__name">Violeta Tejada</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Guillermo Ampudia.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">GA</span>
+            <div>
+              <p class="review-card__name">Guillermo Ampudia</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          </span>
+          <blockquote>Reseña real pendiente de integrar. Este texto se reemplazará por la reseña de Google de Susan Sandoval.</blockquote>
+          <div class="review-card__meta">
+            <span class="review-card__avatar" aria-hidden="true">SS</span>
+            <div>
+              <p class="review-card__name">Susan Sandoval</p>
+              <p class="review-card__badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Reseña verificada de Google
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PLANES ========================= -->
+  <section class="section" id="planes">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Planes</p>
+        <h2>Planes que se adaptan a tu negocio</h2>
+        <p class="text-body" style="margin-inline:auto;">Desde tu primer sitio profesional hasta proyectos avanzados de alto tráfico. Cada proyecto es a medida: te enviamos una propuesta con precio en 24-48 horas.</p>
+      </div>
+
+      <div class="plans-grid" data-reveal-group>
+        <div class="plan-card" data-reveal>
+          <span class="plan-card__tag">Para empezar</span>
+          <h3>Personas y emprendedores</h3>
+          <p>Tu primer sitio profesional, listo para atraer tus primeros clientes en línea.</p>
+        </div>
+        <div class="plan-card plan-card--featured" data-reveal>
+          <span class="plan-card__tag">Más elegido</span>
+          <h3>Empresas y organizaciones</h3>
+          <p>Sitios y tiendas con más alcance, integraciones y soporte continuo.</p>
+        </div>
+        <div class="plan-card" data-reveal>
+          <span class="plan-card__tag">A medida</span>
+          <h3>Agencias y equipos creativos</h3>
+          <p>Proyectos avanzados, de alto tráfico y con necesidades específicas.</p>
+        </div>
+      </div>
+
+      <div class="plans-cta" data-reveal>
+        <a class="btn btn--primary" href="/planes">Ver todos los planes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CIERRE ========================= -->
+  <section class="section section--brand closing">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <h2>Transforma tus ideas en un sitio que genera clientes</h2>
+        <p class="lede" style="margin-inline:auto; color:rgba(255,255,255,.85)">Cuéntanos qué necesitas. Te respondemos el mismo día con los siguientes pasos.</p>
+      </div>
+      <div class="btn-row" data-reveal>
+        <a class="btn btn--on-white" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        <a class="btn btn--outline-on-brand" href="/contacto">Agenda tu llamada de 20 min</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        Webica
+      </a>
+      <p>Estudio de diseño y desarrollo web. Diseñamos, construimos y mantenemos sitios que trabajan para tu negocio.</p>
+
+      <div class="footer-nap">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          Veracruz, México
+        </span>
+        <!-- TODO: reemplazar 52XXXXXXXXXX por el número real de WhatsApp -->
+        <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4A8.5 8.5 0 0 1 4 15.3L2 21l5.9-1.9a8.4 8.4 0 0 0 3.8.9 8.4 8.4 0 0 0 8.4-8.4A8.4 8.4 0 0 0 12 3.1"/></svg>
+          WhatsApp
+        </a>
+        <!-- TODO: reemplazar por el correo real de Webica -->
+        <a href="mailto:hola@webica.mx">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          hola@webica.mx
+        </a>
+      </div>
+
+      <!-- TODO: reemplazar por las URLs reales de redes sociales -->
+      <div class="footer-social">
+        <a href="#" aria-label="Webica en Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="Webica en Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
+        <a href="#" aria-label="Webica en LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.5v.01M12 16.5v-3.7c0-1.3.9-2.3 2.2-2.3 1.3 0 1.8 1 1.8 2.3v3.7"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="footer-col" aria-label="Servicios">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="/diseno-web">Diseño web</a></li>
+        <li><a href="/tiendas-en-linea">Tiendas en línea</a></li>
+        <li><a href="/desarrollo-web">Desarrollo y web apps</a></li>
+        <li><a href="/soluciones-ia">Chatbots y asistentes con IA</a></li>
+        <li><a href="/hosting-infraestructura">Hosting e infraestructura</a></li>
+        <li><a href="/mantenimiento-web">Mantenimiento</a></li>
+        <li><a href="/posicionamiento-seo">SEO</a></li>
+        <li><a href="/creacion-de-contenido">Contenido</a></li>
+        <li><a href="/rescate-web">Rescate web</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Empresa">
+      <h3>Empresa</h3>
+      <ul>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/casos-de-exito">Casos de éxito</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Legal">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="/aviso-de-privacidad">Aviso de privacidad</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> Webica. Todos los derechos reservados.</span>
+    <span>Veracruz, México · Trabajamos a distancia en todo México, Estados Unidos, Canadá y España</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<!-- TODO: reemplazar 52XXXXXXXXXX por el número real de WhatsApp -->
+<a class="whatsapp-float" href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mi%20p%C3%A1gina%20web" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <span class="whatsapp-float__ping" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.33 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm0 18.2h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.23 8.23 0 1 1 6.98 3.86Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
