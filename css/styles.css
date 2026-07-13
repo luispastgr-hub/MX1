@@ -662,6 +662,65 @@ h3, .h3 {
   .hero-visual__stage .device-frame--phone { animation: none; }
 }
 
+/* Hero photo — real photography goes here (team/work-in-progress shot).
+   Framed to the same proportions a real photo will use, so dropping one
+   in later is a straight image swap, not a layout change. */
+.hero-photo {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  max-height: 560px;
+  background: linear-gradient(155deg, var(--blue-50), #dcecff 60%, var(--blue-100));
+  border: 1px solid var(--blue-100);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-photo__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+  padding: var(--space-6);
+  color: var(--blue-700);
+}
+.hero-photo__placeholder .icon-ring {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1.5px dashed var(--blue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-photo__placeholder .icon-ring svg { width: 32px; height: 32px; }
+.hero-photo__placeholder strong { display: block; font-size: 1rem; color: var(--ink-900); }
+.hero-photo__placeholder span { display: block; margin-top: 0.35rem; font-size: 0.8125rem; color: var(--ink-500); max-width: 26ch; }
+
+.hero-photo__badge {
+  position: absolute;
+  left: -14px;
+  bottom: 22px;
+  z-index: 2;
+  width: 168px;
+  animation: float-frame 7s ease-in-out infinite -1.2s;
+}
+@media (prefers-reduced-motion: reduce) { .hero-photo__badge { animation: none; } }
+.hero-photo__badge .device-frame__bar { padding: 0.4rem 0.55rem; }
+.hero-photo__badge .device-frame__dots span { width: 6px; height: 6px; }
+.hero-photo__badge .device-frame__url { font-size: 0.625rem; padding: 0.2rem 0.5rem; }
+.hero-photo__badge .device-frame__body { aspect-ratio: 16/10; padding: var(--space-3); }
+.hero-photo__badge .device-frame__placeholder { padding: var(--space-3); font-size: 0.625rem; border-width: 1px; }
+.hero-photo__badge .device-frame__placeholder strong { font-size: 0.6875rem; }
+
+@media (min-width: 640px) {
+  .hero-photo { max-height: 620px; }
+}
+
 @media (min-width: 1024px) {
   .hero .container { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
   .hero-visual__stage { padding-right: 8%; padding-bottom: 6%; }

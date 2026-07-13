@@ -39,6 +39,19 @@ variables de `css/styles.css` (`:root { --blue-600, --blue-700, ... }`).
   móvil) con los 9 servicios en el orden de importancia del mapa de sitio
   (diseño web primero, chatbots en la posición 4), igual en el home y en el
   footer.
+- **Hero con foto, no solo mockup:** el brief original pedía evitar stock de
+  "gente en oficina" y usar un mockup de producto; el cliente comparó contra
+  su sitio en producción (que sí usa una foto de personas) y decidió que la
+  foto da más confianza. El hero ahora reserva un contenedor 4:5 para una foto
+  real (equipo o cliente trabajando, no stock genérico) con un placeholder
+  claro, y el mockup de navegador quedó como una insignia flotante secundaria
+  en la esquina — conserva el gesto de "construimos sitios reales" sin competir
+  con la foto.
+- **Tarjetas de servicio de largo parejo:** las 9 descripciones se acortaron a
+  un rango de 22–29 palabras (antes iban de 20 a 46) para que el grid se vea
+  balanceado y ninguna tarjeta domine por tener más texto. Esto ajusta
+  ligeramente el copy "palabra por palabra" original — avisar si prefieres el
+  texto literal del brief y resolver el balance solo con CSS en su lugar.
 
 ## Pendientes antes de publicar (marcados con `TODO` en el código)
 - [ ] Número real de WhatsApp (hoy `52XXXXXXXXXX` en 5 lugares: header, hero,
