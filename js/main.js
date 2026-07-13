@@ -65,13 +65,13 @@
     if (prefersReducedMotion || !('IntersectionObserver' in window)) {
       revealEls.forEach(function (el) { el.classList.add('is-visible'); });
     } else {
-      var groups = {};
+      var groupCounts = new Map();
       revealEls.forEach(function (el) {
         var group = el.closest('[data-reveal-group]');
         if (group) {
-          groups[group] = groups[group] || 0;
-          el.style.setProperty('--i', groups[group]);
-          groups[group] += 1;
+          var count = groupCounts.get(group) || 0;
+          el.style.setProperty('--i', count);
+          groupCounts.set(group, count + 1);
         }
       });
 
@@ -91,4 +91,42 @@
   /* Current year in footer, if present */
   var yearEl = document.querySelector('[data-year]');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* Desktop "Servicios" dropdown — hover works via CSS alone; this adds
+     click/keyboard support and outside-click / Escape to close. */
+  var dropdownItem = document.querySelector('[data-dropdown]');
+  var dropdownToggle = document.querySelector('[data-dropdown-toggle]');
+
+  function closeDropdown() {
+    if (!dropdownItem) return;
+    dropdownItem.classList.remove('is-open');
+    if (dropdownToggle) dropdownToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  if (dropdownItem && dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      var isOpen = dropdownItem.classList.toggle('is-open');
+      dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!dropdownItem.contains(e.target)) closeDropdown();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  }
+
+  /* Mobile "Servicios" accordion */
+  var accordion = document.querySelector('[data-accordion]');
+  var accordionTrigger = document.querySelector('[data-accordion-trigger]');
+
+  if (accordion && accordionTrigger) {
+    accordionTrigger.addEventListener('click', function () {
+      var isOpen = accordion.classList.toggle('is-open');
+      accordionTrigger.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 })();
