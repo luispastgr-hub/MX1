@@ -74,14 +74,14 @@
 /* ---- Reset ------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+/* prefers-reduced-motion only gates genuinely INTRUSIVE effects (infinite
+   ambient loops: floating orbs/mockups, the WhatsApp ping) — never hovers,
+   fades, or scroll-reveals. A blanket "kill every transition" rule makes
+   the site look dead for the large share of Windows users who have this
+   flag on by default without asking for it. See skill gotcha A.2. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
 
 body {
@@ -223,6 +223,7 @@ h3, .h3 {
 }
 .btn:active { transform: translateY(1px) scale(0.99); }
 .btn svg { width: 20px; height: 20px; }
+.btn[data-magnetic] { will-change: transform; }
 
 .btn--primary {
   /* Gradient between two blue-700+ stops, not the literal brand blue-600:
@@ -641,9 +642,6 @@ h3, .h3 {
 @keyframes hero-in {
   to { opacity: 1; transform: translateY(0); }
 }
-@media (prefers-reduced-motion: reduce) {
-  .hero-copy > * { opacity: 1; transform: none; animation: none; }
-}
 .hero-copy > * + * { margin-top: var(--space-5); }
 .hero-copy .lede { margin-top: var(--space-5); }
 .hero-copy .btn-row { margin-top: var(--space-7); }
@@ -847,10 +845,21 @@ h3, .h3 {
   gap: var(--space-4);
   align-items: flex-start;
   padding: var(--space-4);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  /* Solid fallback first (gotcha B.12) — browsers without backdrop-filter
+     still get a readable card, just without the glass blur. */
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius-md);
+  transition: background-color var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
 }
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .remote-list li {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+  }
+}
+.remote-list li:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
 .remote-list .icon-badge {
   width: 40px;
   height: 40px;
@@ -1192,10 +1201,6 @@ h3, .h3 {
 }
 [data-reveal].is-visible { opacity: 1; transform: translateY(0) scale(1); }
 [data-reveal-group] > * { transition-delay: calc(var(--i, 0) * 80ms); }
-
-@media (prefers-reduced-motion: reduce) {
-  [data-reveal] { opacity: 1; transform: none; transition: none; }
-}
 
 /* ---- Enganche (hook) ------------------------------------------------------------------ */
 .hook__grid {
