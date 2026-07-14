@@ -129,4 +129,14 @@
       accordionTrigger.setAttribute('aria-expanded', String(isOpen));
     });
   }
+
+  /* FAQ accordion — each item toggles independently */
+  document.querySelectorAll('[data-faq]').forEach(function (item) {
+    var trigger = item.querySelector('.faq-item__trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', function () {
+      var isOpen = item.classList.toggle('is-open');
+      trigger.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
 })();

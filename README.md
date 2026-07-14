@@ -53,10 +53,32 @@ variables de `css/styles.css` (`:root { --blue-600, --blue-700, ... }`).
   ligeramente el copy "palabra por palabra" original — avisar si prefieres el
   texto literal del brief y resolver el balance solo con CSS en su lugar.
 
+## Estructura narrativa completa (v2 del contenido)
+Se reconstruyó el home siguiendo el documento "versión final" que recupera la
+jerarquía del sitio original: **Hero → Barra de confianza → Enganche ("Crea tu
+sitio web o tienda en línea") → Servicios (9) → Todo incluido (checklist 4×2)
+→ Expertos en ecommerce → Trabajamos a distancia → Cómo trabajamos → Quiénes
+somos (extracto) → Recuperación de sitios (extracto) → Reseñas → Clientes
+(logos) → Planes → Preguntas frecuentes → Cierre**. Se agregó schema
+`FAQPage` y se actualizaron el `<title>`/meta description al nuevo enfoque
+("página web o tienda en línea, todo incluido").
+
+La sección "Para quién" (industrias) de la versión anterior **se quitó**: no
+aparece en el orden de secciones de este documento. Si prefieres conservarla
+en algún punto, dime dónde y la regreso.
+
+La sección "Expertos en ecommerce" se diseñó en blanco (no en el degradado
+azul oscuro) a propósito: puesta junto a "Trabajamos a distancia" (que sí es
+azul oscuro), dos secciones oscuras consecutivas se fundían en un solo bloque
+sin costura visible — lo detecté al revisar la captura completa y lo corregí
+antes de entregar.
+
 ## Pendientes antes de publicar (marcados con `TODO` en el código)
 - [ ] Número real de WhatsApp (hoy `52XXXXXXXXXX` en 5 lugares: header, hero,
       mobile-nav, sección "a distancia", cierre, footer, botón flotante)
-- [ ] Capturas reales de proyectos (AltiSuma, Pearl Club) para el mockup del hero
+- [ ] Capturas reales de proyectos (AltiSuma, Pearl Club, Galería REALIA) para
+      el mockup del hero, "Crea tu sitio o tienda", "Expertos en ecommerce" y
+      la franja de clientes
 - [ ] Texto real de las 6 reseñas de Google (hoy placeholder claramente marcado)
 - [ ] `+[N] proyectos entregados` — número real
 - [ ] Imagen Open Graph 1200×630 (`assets/img/og-image.jpg`)
