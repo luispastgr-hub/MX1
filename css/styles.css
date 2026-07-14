@@ -1073,7 +1073,18 @@ h3, .h3 {
   padding: 0.25rem 0.6rem;
   border-radius: var(--radius-pill);
 }
-.plan-card p { color: var(--ink-500); font-size: 0.9375rem; }
+.plan-card p { color: var(--ink-500); font-size: 0.9375rem; flex: 1; }
+.plan-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: var(--space-2);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--blue-700);
+}
+.plan-card__link svg { width: 16px; height: 16px; transition: transform var(--dur-fast) var(--ease-out); }
+.plan-card__link:hover svg { transform: translateX(3px); }
 .plans-cta { margin-top: var(--space-7); text-align: center; }
 @media (min-width: 860px) { .plans-grid { grid-template-columns: repeat(3, 1fr); } }
 
